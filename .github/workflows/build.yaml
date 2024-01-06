@@ -20,7 +20,7 @@ jobs:
         run: |
           if [ ! -f "gradlew" ]; then gradle wrapper; fi
           chmod +x gradlew
-          ./gradlew assemblerelease --stacktrace
+          ./gradlew assembleDebug --stacktrace
       - name: Prepare App
         run: |
           mkdir -p ${{ github.workspace }}/apk/
