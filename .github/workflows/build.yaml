@@ -30,6 +30,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: mybuild.apk
+          name: mybuildapk
           path: ${{ github.workspace }}/apk/*
 
